@@ -10,7 +10,7 @@ export const PERSONAL_INFO = {
   
   // Descripción personal
   description: {
-    short: "+8 años de experiencia. Desarrollador Full Stack apasionado por crear soluciones web innovadoras y eficientes.",
+    short: "+8 años de experiencia en desarrollo full stack con JavaScript/TypeScript, React, Angular, Node.js, Python, MongoDB, PostgreSQL y PostGIS. Especializado en arquitecturas RESTful, aplicaciones en tiempo real con WebSockets (Socket.io), automatización de procesos y análisis de datos geoespaciales.",
     long: [
       "Soy Francisco Castaño, un Desarrollador FullStack con más de 8 años de experiencia creando soluciones web, automatizando procesos y analizando datos. He liderado desarrollos en investigación académica, educación tecnológica y atención al cliente, logrando mejoras medibles en rendimiento, eficiencia y experiencia de usuario.",
       "Mi enfoque combina habilidades técnicas sólidas con comunicación clara y enfoque en resultados. Me especializo en el desarrollo de aplicaciones completas que van desde herramientas de visualización y análisis de datos hasta sistemas de gestión de proyectos con funcionalidades en tiempo real.",
