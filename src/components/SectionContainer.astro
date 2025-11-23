@@ -1,11 +1,17 @@
 ---
 const { class: className, id } = Astro.props
+
+const isHeroSection = id === undefined;
+
+const sectionClasses = isHeroSection
+  ? `section ${className} scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl`
+  : `section ${className} scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl bg-white dark:bg-gray-900 rounded-lg shadow-md p-6`;
 ---
 
 <section
   id={id}
   data-section={id}
-  class={`section ${className} scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl`}
+  class={sectionClasses}
 >
   <slot />
 </section>
