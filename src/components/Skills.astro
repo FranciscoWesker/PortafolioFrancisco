@@ -1,0 +1,37 @@
+---
+interface SkillCategory {
+  title: string;
+  skills: string[];
+}
+
+const SKILLS_DATA: SkillCategory[] = [
+  {
+    title: "Frontend",
+    skills: ["JavaScript", "TypeScript", "React", "Astro", "HTML", "CSS"],
+  },
+  {
+    title: "Backend",
+    skills: ["Node.js", "Express", "Python", "MongoDB", "PostgreSQL"],
+  },
+  {
+    title: "Otras Herramientas",
+    skills: ["Git & GitHub", "Docker", "Testing (Jest)", "SCRUM"],
+  },
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {SKILLS_DATA.map((category) => (
+    <div class="bg-white/5 dark:bg-gray-800/80 rounded-lg shadow-lg p-6 border border-white/10">
+      <h3 class="text-xl font-bold mb-4 text-accent-500 dark:text-accent-300">{category.title}</h3>
+      <ul class="space-y-2">
+        {category.skills.map((skill) => (
+          <li class="flex items-center">
+            <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span class="text-gray-800 dark:text-gray-300">{skill}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</div>
